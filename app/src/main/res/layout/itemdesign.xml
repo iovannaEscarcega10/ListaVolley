@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nombre"
+        android:text="Nombre:"
+       />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtnom"
+        android:layout_toRightOf="@+id/nombre"
+        android:text=""
+        />
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/apellidos"
+    android:text="Apellidos:"
+    android:layout_below="@+id/nombre"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/apellidos2"
+        android:layout_toRightOf="@+id/nombre"
+        android:layout_below="@+id/txtnom"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edad"
+        android:text="Edad:"
+        android:layout_below="@+id/apellidos"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edad2"
+        android:layout_toRightOf="@+id/nombre"
+        android:layout_below="@+id/apellidos2"
+        />
+
+</RelativeLayout>
