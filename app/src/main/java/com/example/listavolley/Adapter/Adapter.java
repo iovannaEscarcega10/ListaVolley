@@ -42,10 +42,11 @@ public class Adapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        convertView =  LayoutInflater.from(context).inflate(R.layout.itemdesign,null);
+        convertView =  LayoutInflater.from(context).inflate(R.layout.itemdesign,parent,false);
 
         Persona ci = (Persona) getItem(position);
 
+        TextView id = convertView.findViewById(R.id.txtid);
         TextView nombre = convertView.findViewById(R.id.txtnom);
         TextView apellidos = convertView.findViewById(R.id.apellidos2);
         TextView edad = convertView.findViewById(R.id.edad2);
@@ -53,6 +54,7 @@ public class Adapter extends BaseAdapter {
         nombre.setText(ci.getNombre());
         apellidos.setText(ci.getApellido());
         edad.setText(String.valueOf(ci.getEdad()));
+        id.setText(String.valueOf(ci.getId()));
         return convertView;
     }
 }

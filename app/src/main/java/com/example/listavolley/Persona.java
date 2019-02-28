@@ -1,17 +1,25 @@
 package com.example.listavolley;
 
 public class Persona {
+    private Integer id;
     private String Nombre;
     private String Apellido;
-    private int Edad;
-    private int Id;
+    private Integer Edad;
+
+
+    public Persona(Integer id,String nombre, String apellido, Integer edad) {
+        Nombre = nombre;
+        Apellido = apellido;
+        Edad = edad;
+        id = id;
+    }
 
     public void setId(int id){
-        this.Id=Id;
+        this.id=id;
     }
 
     public int getId(){
-        return Id;
+        return id;
     }
 
     public void setNombre(String Nombre){

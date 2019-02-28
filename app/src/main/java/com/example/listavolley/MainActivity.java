@@ -36,8 +36,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         lista = findViewById(R.id.lista);
-        btn= findViewById(R.id.btn1);
-
     }
 
 
@@ -60,11 +58,10 @@ public class MainActivity extends AppCompatActivity {
                             List<Persona> lp = g.fromJson(response.toString(),t);
 
 
-                            Adapter adapter = new Adapter(getApplicationContext(),lp);
+                            Adapter adapter = new Adapter(MainActivity.this,lp);
                             lista.setAdapter(adapter);
 
-                           // Log.d("Listaa",response.toString());
-
+                            //Log.d("Listaa",adapter.toString());
 
                         }catch (Exception e){
                             e.printStackTrace();
